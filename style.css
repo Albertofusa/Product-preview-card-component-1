@@ -4,11 +4,14 @@
 }
 
 :root {
+  --cream-2: #f3ebe4;
   --Dark-cyan: hsl(158, 36%, 37%);
   --Cream: hsl(30, 38%, 92%);
   --Very-dark-blue: hsl(212, 21%, 14%);
   --Dark-grayish-blue: hsl(228, 12%, 48%);
   --White: hsl(0, 0%, 100%);
+  --font-family: "Montserrat", sans-serif;
+  --font-family: "Fraunces", serif;
 }
 
 body {
@@ -20,4 +23,93 @@ body {
 button {
   border: 0;
   outline: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--cream-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  width: 800px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+.img__content {
+  width: 50%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.information__content {
+  width: 50%;
+  background-color: var(--White);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 40px 30px;
+}
+
+.information__content--subtitle {
+  color: var(--Dark-grayish-blue);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+}
+
+.information__content--title {
+  font-size: 45px;
+  line-height: 45px;
+  margin-bottom: 25px;
+}
+
+.information__content--text {
+  font-size: 16px;
+  color: var(--Dark-grayish-blue);
+  line-height: 30px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
+}
+
+.information__content__box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.information__content__box--price {
+    font-size: 40px;
+    color: var(--Dark-cyan);
+}
+
+.information__content__box--price--underline {
+    text-decoration: line-through;
+    color: var(--Dark-grayish-blue);
+    font-size: 14px;
+}
+
+.information__content--button {
+    border-radius: 10px;
+    padding: 20px 110px;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
 }
